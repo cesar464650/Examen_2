@@ -1,0 +1,23 @@
+//Flores Castillo Cesar Roberto
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+	float n[5]={};
+	int i, j;
+	
+	for(i=1;i<6;i++){
+		printf("Digite un numero ");
+		scanf("%f",&n[i]);
+	}
+	printf("Variable\t Numero\t\t Direccion de memoria\n");
+	for(i=1;i<6;i++){
+		for(j=i;j<i+1;j++){
+			printf("n[%i]\t\t %.2f\t\t       %d", i, n[i], &n[i]);
+			printf("\n");
+		}
+	}
+	
+	getch();
+	return 0;
+}
